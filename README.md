@@ -62,14 +62,14 @@ Document generation date: 2016-04-16 00:40:29.
 * [wdbc.names](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.names)
 
 **Cite**:
-```
+```nohighlight
 https://archive.ics.uci.edu/ml/citation_policy.html
 @misc{Lichman:2013 , author = "M. Lichman", year = "2013", title = "{UCI} Machine Learning Repository", url = "http://archive.ics.uci.edu/ml", institution = "University of California, Irvine, School of Information and Computer Sciences" } 
 ```
 
 **Dataset**:
 
-```
+```nohighlight
 'data.frame':	569 obs. of  31 variables:
  $ mean radius            : num  18 20.6 19.7 11.4 20.3 ...
  $ mean texture           : num  10.4 17.8 21.2 20.4 14.3 ...
