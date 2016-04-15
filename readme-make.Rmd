@@ -4,8 +4,6 @@ author: "Andrzej Wójtowicz"
 output: 
   html_document: 
     keep_md: yes
-    number_sections: yes
-    toc: yes
 ---
 
 ```{r global-options, include=FALSE}
@@ -19,6 +17,21 @@ Document generation date: `r Sys.time()`.
 
 ```{r show-datasets, results='asis'}
 library(yaml)
+
+cat("\n# Table of Contents\n\n")
+
+for (dir.name in dir(PATH_DATASETS))
+{
+    config.yaml.file.path = paste0(PATH_DATASETS, dir.name, "/", FILE_CONFIG_YAML)
+    config.yaml = yaml.load_file(config.yaml.file.path)
+    
+    anchor = gsub(" ", "-", gsub("[[:punct:]]", "", 
+                                 tolower(config.yaml$name)))
+    cat(paste0("1. [", config.yaml$name, "](#", anchor, ")\n" ))
+    
+}
+
+cat("\n---\n\n")
 
 for (dir.name in dir(PATH_DATASETS))
 {

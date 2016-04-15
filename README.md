@@ -3,8 +3,24 @@ Andrzej Wójtowicz
 
 
 
-Document generation date: 2016-04-16 01:01:04.
+Document generation date: 2016-04-16 01:21:55.
 
+
+
+# Table of Contents
+
+1. [Bank Marketing](#bank-marketing)
+1. [Breast Cancer Wisconsin (Diagnostic)](#breast-cancer-wisconsin-diagnostic)
+1. [Breast Cancer Wisconsin (Original)](#breast-cancer-wisconsin-original)
+1. [Cardiotocography](#cardiotocography)
+1. [Default of credit card clients](#default-of-credit-card-clients)
+1. [ILPD (Indian Liver Patient Dataset)](#ilpd-indian-liver-patient-dataset)
+1. [MAGIC Gamma Telescope](#magic-gamma-telescope)
+1. [Seismic bumps](#seismic-bumps)
+1. [Spambase](#spambase)
+1. [Wine Quality](#wine-quality)
+
+---
 
 # Bank Marketing 
 
