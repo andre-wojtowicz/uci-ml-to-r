@@ -3,7 +3,7 @@ Andrzej Wójtowicz
 
 
 
-Document generation date: 2016-04-16 00:40:29.
+Document generation date: 2016-04-16 01:01:04.
 
 
 # Bank Marketing 
@@ -17,13 +17,13 @@ Document generation date: 2016-04-16 00:40:29.
 * [bank-additional.zip](https://archive.ics.uci.edu/ml/machine-learning-databases/00222/bank-additional.zip)
 
 **Cite**:
-```
+```nohighlight
 [Moro et al., 2014] S. Moro, P. Cortez and P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. Decision Support Systems, Elsevier, 62:22-31, June 2014
 ```
 
 **Dataset**:
 
-```
+```nohighlight
 'data.frame':	38227 obs. of  18 variables:
  $ age           : int  56 57 37 40 56 45 59 24 25 25 ...
  $ job           : Factor w/ 11 levels "admin.","blue-collar",..: 4 8 8 1 8 8 1 10 8 8 ...
@@ -121,13 +121,13 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 * [breast-cancer-wisconsin.names](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.names)
 
 **Cite**:
-```
+```nohighlight
 O. L. Mangasarian and W. H. Wolberg: "Cancer diagnosis via linear programming", SIAM News, Volume 23, Number 5, September 1990, pp 1 & 18.
 ```
 
 **Dataset**:
 
-```
+```nohighlight
 'data.frame':	683 obs. of  10 variables:
  $ Clump Thickness            : int  5 5 3 6 4 8 1 2 2 4 ...
  $ Uniformity of Cell Size    : int  1 4 1 8 1 10 1 1 1 2 ...
@@ -157,13 +157,13 @@ O. L. Mangasarian and W. H. Wolberg: "Cancer diagnosis via linear programming", 
 * [CTG.xls](https://archive.ics.uci.edu/ml/machine-learning-databases/00193/CTG.xls)
 
 **Cite**:
-```
+```nohighlight
 Ayres de Campos et al. (2000) SisPorto 2.0 A Program for Automated Analysis of Cardiotocograms. J Matern Fetal Med 5:311-318 
 ```
 
 **Dataset**:
 
-```
+```nohighlight
 'data.frame':	2126 obs. of  30 variables:
  $ LB      : int  120 132 133 134 132 134 134 122 122 122 ...
  $ AC      : int  0 4 2 2 4 1 1 0 0 0 ...
@@ -213,13 +213,13 @@ Ayres de Campos et al. (2000) SisPorto 2.0 A Program for Automated Analysis of C
 * [default of credit card clients.xls](https://archive.ics.uci.edu/ml/machine-learning-databases/00350/default%20of%20credit%20card%20clients.xls)
 
 **Cite**:
-```
+```nohighlight
 Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. Expert Systems with Applications, 36(2), 2473-2480.
 ```
 
 **Dataset**:
 
-```
+```nohighlight
 'data.frame':	30000 obs. of  24 variables:
  $ LIMIT_BAL                 : int  20000 120000 90000 50000 50000 50000 500000 100000 140000 20000 ...
  $ SEX                       : Factor w/ 2 levels "1","2": 2 2 2 2 1 1 1 2 2 1 ...
@@ -263,14 +263,14 @@ Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for 
 * [Indian Liver Patient Dataset (ILPD).csv](https://archive.ics.uci.edu/ml/machine-learning-databases/00225/Indian%20Liver%20Patient%20Dataset%20(ILPD).csv)
 
 **Cite**:
-```
+```nohighlight
 https://archive.ics.uci.edu/ml/citation_policy.html
 @misc{Lichman:2013 , author = "M. Lichman", year = "2013", title = "{UCI} Machine Learning Repository", url = "http://archive.ics.uci.edu/ml", institution = "University of California, Irvine, School of Information and Computer Sciences" } 
 ```
 
 **Dataset**:
 
-```
+```nohighlight
 'data.frame':	583 obs. of  11 variables:
  $ Age      : int  65 62 62 58 72 46 26 29 17 55 ...
  $ Gender   : Factor w/ 2 levels "Female","Male": 1 2 2 2 2 2 1 1 2 2 ...
@@ -302,14 +302,14 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 * [magic04.names](https://archive.ics.uci.edu/ml/machine-learning-databases/magic/magic04.names)
 
 **Cite**:
-```
+```nohighlight
 https://archive.ics.uci.edu/ml/citation_policy.html
 @misc{Lichman:2013 , author = "M. Lichman", year = "2013", title = "{UCI} Machine Learning Repository", url = "http://archive.ics.uci.edu/ml", institution = "University of California, Irvine, School of Information and Computer Sciences" } 
 ```
 
 **Dataset**:
 
-```
+```nohighlight
 'data.frame':	19020 obs. of  11 variables:
  $ fLength : num  28.8 31.6 162.1 23.8 75.1 ...
  $ fWidth  : num  16 11.72 136.03 9.57 30.92 ...
@@ -340,13 +340,13 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 * [seismic-bumps.arff](https://archive.ics.uci.edu/ml/machine-learning-databases/00266/seismic-bumps.arff)
 
 **Cite**:
-```
+```nohighlight
 Sikora M., Wrobel L.: Application of rule induction algorithms for analysis of data collected by seismic hazard monitoring systems in coal mines. Archives of Mining Sciences, 55(1), 2010, 91-114.
 ```
 
 **Dataset**:
 
-```
+```nohighlight
 'data.frame':	2584 obs. of  16 variables:
  $ seismic       : Factor w/ 2 levels "a","b": 1 1 1 1 1 1 1 1 1 1 ...
  $ seismoacoustic: Factor w/ 3 levels "a","b","c": 1 1 1 1 1 1 1 1 1 1 ...
@@ -384,14 +384,14 @@ Sikora M., Wrobel L.: Application of rule induction algorithms for analysis of d
 * [spambase.names](https://archive.ics.uci.edu/ml/machine-learning-databases/spambase/spambase.names)
 
 **Cite**:
-```
+```nohighlight
 https://archive.ics.uci.edu/ml/citation_policy.html
 @misc{Lichman:2013 , author = "M. Lichman", year = "2013", title = "{UCI} Machine Learning Repository", url = "http://archive.ics.uci.edu/ml", institution = "University of California, Irvine, School of Information and Computer Sciences" }
 ```
 
 **Dataset**:
 
-```
+```nohighlight
 'data.frame':	4601 obs. of  58 variables:
  $ word_freq_make            : num  0 0.21 0.06 0 0 0 0 0 0.15 0.06 ...
  $ word_freq_address         : num  0.64 0.28 0 0 0 0 0 0 0 0.12 ...
@@ -471,13 +471,13 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 * [winequality.names](https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality.names)
 
 **Cite**:
-```
+```nohighlight
 P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009.
 ```
 
 **Dataset**:
 
-```
+```nohighlight
 'data.frame':	6497 obs. of  13 variables:
  $ fixed acidity       : num  7 6.3 8.1 7.2 7.2 8.1 6.2 7 6.3 8.1 ...
  $ volatile acidity    : num  0.27 0.3 0.28 0.23 0.23 0.28 0.32 0.27 0.3 0.22 ...

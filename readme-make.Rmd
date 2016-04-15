@@ -38,7 +38,7 @@ for (dir.name in dir(PATH_DATASETS))
     }
     cat("\n")
     
-    cat(paste0("**Cite**:\n```\n", config.yaml$cite, "\n```\n\n"))
+    cat(paste0("**Cite**:\n```nohighlight\n", config.yaml$cite, "\n```\n\n"))
     
     cat(paste("**Dataset**:\n\n"))
     
@@ -47,7 +47,7 @@ for (dir.name in dir(PATH_DATASETS))
     
     dataset = readRDS(preprocessed.file.path)
     
-    cat("```\n")
+    cat("```nohighlight\n")
     cat(str(dataset))
     cat("\n```\n\n")
     
