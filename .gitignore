@@ -20,3 +20,6 @@ vignettes/*.pdf
 
 data-collection/*/original/*
 data-collection/*/preprocessed/*
+
+# markdown outputs
+*.html

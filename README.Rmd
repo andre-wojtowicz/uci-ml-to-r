@@ -1,0 +1,62 @@
+---
+title: "UCI Machine Learning datasets for R"
+author: "Andrzej Wójtowicz"
+output: 
+  html_document: 
+    keep_md: yes
+    number_sections: yes
+    toc: yes
+---
+
+```{r global-options, include=FALSE}
+knitr::opts_chunk$set(comment="", echo=FALSE, 
+                      warning=FALSE, message=FALSE)
+source('config.R')
+```
+
+Document generation date: `r Sys.time()`.
+
+
+```{r show-datasets, results='asis'}
+library(yaml)
+
+for (dir.name in dir(PATH_DATASETS))
+{
+    config.yaml.file.path = paste0(PATH_DATASETS, dir.name, "/", FILE_CONFIG_YAML)
+    config.yaml = yaml.load_file(config.yaml.file.path)
+    
+    cat(paste("#", config.yaml$name, "\n\n"))
+    
+    cat(paste("**Local directory**:", dir.name, "\n\n"))
+    
+    cat(paste0("**Details**: [link](", config.yaml$info, ")\n\n"))
+    
+    cat(paste("**Files**:\n\n"))
+    for (file.url in config.yaml$urls)
+    {
+        cat(paste0("* [", URLdecode(basename(file.url)), "](", file.url, ")\n"))
+    }
+    cat("\n")
+    
+    cat(paste0("**Cite**:\n```\n", config.yaml$cite, "\n```\n\n"))
+    
+    cat(paste("**Dataset**:\n\n"))
+    
+    preprocessed.dir = gsub("\\*", dir.name, PATH_DATASET_PREPROCESSED)
+    preprocessed.file.path = paste0(preprocessed.dir, FILE_PREPROCESSED_OUTPUT)
+    
+    dataset = readRDS(preprocessed.file.path)
+    
+    cat("```\n")
+    cat(str(dataset))
+    cat("\n```\n\n")
+    
+    perc.classes = sort(round(100*as.numeric(
+        table(dataset[, ncol(dataset)]))/nrow(dataset), 0))
+    cat(paste("**Class imbalance**:", 
+              paste0(perc.classes[1], "% / ", 
+                     perc.classes[2], "%\n\n")))
+    cat("---\n\n")
+}
+```
+
