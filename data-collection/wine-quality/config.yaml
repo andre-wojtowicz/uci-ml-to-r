@@ -1,0 +1,13 @@
+--- 
+name: Wine Quality
+
+info: https://archive.ics.uci.edu/ml/datasets/Wine+Quality
+
+urls:
+- https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv
+- https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-white.csv
+- https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality.names
+
+cite: > 
+    P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.
+    Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009.

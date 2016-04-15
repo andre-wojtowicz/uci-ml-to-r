@@ -1,0 +1,17 @@
+--- 
+name: ILPD (Indian Liver Patient Dataset)
+
+info: https://archive.ics.uci.edu/ml/datasets/ILPD+(Indian+Liver+Patient+Dataset)
+
+urls:
+- https://archive.ics.uci.edu/ml/machine-learning-databases/00225/Indian%20Liver%20Patient%20Dataset%20(ILPD).csv
+
+cite: > 
+    https://archive.ics.uci.edu/ml/citation_policy.html
+
+    @misc{Lichman:2013 ,
+    author = "M. Lichman",
+    year = "2013",
+    title = "{UCI} Machine Learning Repository",
+    url = "http://archive.ics.uci.edu/ml",
+    institution = "University of California, Irvine, School of Information and Computer Sciences" } 

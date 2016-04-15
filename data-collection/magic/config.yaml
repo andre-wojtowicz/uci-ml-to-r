@@ -1,0 +1,18 @@
+--- 
+name: MAGIC Gamma Telescope
+
+info: https://archive.ics.uci.edu/ml/datasets/MAGIC+Gamma+Telescope
+
+urls:
+- https://archive.ics.uci.edu/ml/machine-learning-databases/magic/magic04.data
+- https://archive.ics.uci.edu/ml/machine-learning-databases/magic/magic04.names
+
+cite: > 
+    https://archive.ics.uci.edu/ml/citation_policy.html
+
+    @misc{Lichman:2013 ,
+    author = "M. Lichman",
+    year = "2013",
+    title = "{UCI} Machine Learning Repository",
+    url = "http://archive.ics.uci.edu/ml",
+    institution = "University of California, Irvine, School of Information and Computer Sciences" } 

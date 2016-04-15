@@ -1,0 +1,10 @@
+--- 
+name: Cardiotocography
+
+info: https://archive.ics.uci.edu/ml/datasets/Cardiotocography
+
+urls:
+- https://archive.ics.uci.edu/ml/machine-learning-databases/00193/CTG.xls
+
+cite: > 
+    Ayres de Campos et al. (2000) SisPorto 2.0 A Program for Automated Analysis of Cardiotocograms. J Matern Fetal Med 5:311-318 

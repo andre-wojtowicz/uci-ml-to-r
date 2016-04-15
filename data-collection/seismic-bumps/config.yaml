@@ -1,0 +1,10 @@
+--- 
+name: Seismic bumps
+
+info: https://archive.ics.uci.edu/ml/datasets/seismic-bumps
+
+urls:
+- https://archive.ics.uci.edu/ml/machine-learning-databases/00266/seismic-bumps.arff
+
+cite: > 
+    Sikora M., Wrobel L.: Application of rule induction algorithms for analysis of data collected by seismic hazard monitoring systems in coal mines. Archives of Mining Sciences, 55(1), 2010, 91-114.

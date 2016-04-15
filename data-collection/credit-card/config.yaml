@@ -1,0 +1,10 @@
+--- 
+name: Default of credit card clients
+
+info: https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients
+
+urls:
+- https://archive.ics.uci.edu/ml/machine-learning-databases/00350/default%20of%20credit%20card%20clients.xls
+
+cite: > 
+    Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. Expert Systems with Applications, 36(2), 2473-2480.

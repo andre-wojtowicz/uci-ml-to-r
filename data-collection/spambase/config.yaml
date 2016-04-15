@@ -1,0 +1,19 @@
+--- 
+name: Spambase
+
+info: https://archive.ics.uci.edu/ml/datasets/Spambase
+
+urls:
+- https://archive.ics.uci.edu/ml/machine-learning-databases/spambase/spambase.DOCUMENTATION
+- https://archive.ics.uci.edu/ml/machine-learning-databases/spambase/spambase.data
+- https://archive.ics.uci.edu/ml/machine-learning-databases/spambase/spambase.names
+
+cite: > 
+    https://archive.ics.uci.edu/ml/citation_policy.html
+
+    @misc{Lichman:2013 ,
+    author = "M. Lichman",
+    year = "2013",
+    title = "{UCI} Machine Learning Repository",
+    url = "http://archive.ics.uci.edu/ml",
+    institution = "University of California, Irvine, School of Information and Computer Sciences" }
