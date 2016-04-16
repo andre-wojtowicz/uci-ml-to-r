@@ -64,11 +64,23 @@ for (dir.name in dir(PATH_DATASETS))
     cat(str(dataset))
     cat("\n```\n\n")
     
+    cat("**Predictors**:\n\n")
+    
+    df.pred = data.frame(table(sapply(dataset[, 1:(ncol(dataset)-1)], 
+                               function(f){paste(class(f), collapse=" ")})))
+    colnames(df.pred) = c("Class", "Frequency")
+    
+    cat(knitr::kable(df.pred, format="markdown"), sep="\n")
+    cat("\n")
+    
     perc.classes = sort(round(100*as.numeric(
         table(dataset[, ncol(dataset)]))/nrow(dataset), 0))
+    num.classes = sort(as.numeric(table(dataset[, ncol(dataset)])))
     cat(paste("**Class imbalance**:", 
               paste0(perc.classes[1], "% / ", 
-                     perc.classes[2], "%\n\n")))
+                     perc.classes[2], "% (",
+                     num.classes[1], " / ", 
+                     num.classes[2], ")\n\n")))
     cat("---\n\n")
 }
 ```

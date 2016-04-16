@@ -3,7 +3,7 @@ Andrzej Wójtowicz
 
 
 
-Document generation date: 2016-04-16 01:21:55.
+Document generation date: 2016-04-16 13:55:00.
 
 
 
@@ -62,7 +62,16 @@ Document generation date: 2016-04-16 01:21:55.
 
 ```
 
-**Class imbalance**: 11% / 89%
+**Predictors**:
+
+|Class          | Frequency|
+|:--------------|---------:|
+|factor         |         6|
+|integer        |         3|
+|numeric        |         5|
+|ordered factor |         3|
+
+**Class imbalance**: 11% / 89% (4254 / 33973)
 
 ---
 
@@ -121,7 +130,13 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 ```
 
-**Class imbalance**: 37% / 63%
+**Predictors**:
+
+|Class   | Frequency|
+|:-------|---------:|
+|numeric |        30|
+
+**Class imbalance**: 37% / 63% (212 / 357)
 
 ---
 
@@ -158,7 +173,13 @@ O. L. Mangasarian and W. H. Wolberg: "Cancer diagnosis via linear programming", 
 
 ```
 
-**Class imbalance**: 35% / 65%
+**Predictors**:
+
+|Class   | Frequency|
+|:-------|---------:|
+|integer |         9|
+
+**Class imbalance**: 35% / 65% (239 / 444)
 
 ---
 
@@ -214,7 +235,16 @@ Ayres de Campos et al. (2000) SisPorto 2.0 A Program for Automated Analysis of C
 
 ```
 
-**Class imbalance**: 22% / 78%
+**Predictors**:
+
+|Class          | Frequency|
+|:--------------|---------:|
+|factor         |         9|
+|integer        |        17|
+|numeric        |         2|
+|ordered factor |         1|
+
+**Class imbalance**: 22% / 78% (471 / 1655)
 
 ---
 
@@ -264,7 +294,14 @@ Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for 
 
 ```
 
-**Class imbalance**: 22% / 78%
+**Predictors**:
+
+|Class   | Frequency|
+|:-------|---------:|
+|factor  |         3|
+|integer |        20|
+
+**Class imbalance**: 22% / 78% (6636 / 23364)
 
 ---
 
@@ -302,7 +339,15 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 ```
 
-**Class imbalance**: 29% / 71%
+**Predictors**:
+
+|Class   | Frequency|
+|:-------|---------:|
+|factor  |         1|
+|integer |         4|
+|numeric |         5|
+
+**Class imbalance**: 29% / 71% (167 / 416)
 
 ---
 
@@ -341,7 +386,13 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 ```
 
-**Class imbalance**: 35% / 65%
+**Predictors**:
+
+|Class   | Frequency|
+|:-------|---------:|
+|numeric |        10|
+
+**Class imbalance**: 35% / 65% (6688 / 12332)
 
 ---
 
@@ -383,7 +434,14 @@ Sikora M., Wrobel L.: Application of rule induction algorithms for analysis of d
 
 ```
 
-**Class imbalance**: 7% / 93%
+**Predictors**:
+
+|Class   | Frequency|
+|:-------|---------:|
+|factor  |         4|
+|integer |        11|
+
+**Class imbalance**: 7% / 93% (170 / 2414)
 
 ---
 
@@ -470,7 +528,14 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 ```
 
-**Class imbalance**: 39% / 61%
+**Predictors**:
+
+|Class   | Frequency|
+|:-------|---------:|
+|integer |         2|
+|numeric |        55|
+
+**Class imbalance**: 39% / 61% (1813 / 2788)
 
 ---
 
@@ -511,7 +576,14 @@ P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. Modeling wine preferen
 
 ```
 
-**Class imbalance**: 37% / 63%
+**Predictors**:
+
+|Class   | Frequency|
+|:-------|---------:|
+|factor  |         1|
+|numeric |        11|
+
+**Class imbalance**: 37% / 63% (2384 / 4113)
 
 ---
 
