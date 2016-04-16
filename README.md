@@ -3,7 +3,7 @@ Andrzej Wójtowicz
 
 
 
-Document generation date: 2016-04-16 13:55:00.
+Document generation date: 2016-04-16 14:20:08.
 
 
 
@@ -28,13 +28,13 @@ Document generation date: 2016-04-16 13:55:00.
 
 **Details**: [link](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
 
-**Files**:
+**Source data files**:
 
 * [bank-additional.zip](https://archive.ics.uci.edu/ml/machine-learning-databases/00222/bank-additional.zip)
 
 **Cite**:
 ```nohighlight
-[Moro et al., 2014] S. Moro, P. Cortez and P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. Decision Support Systems, Elsevier, 62:22-31, June 2014
+S. Moro, P. Cortez and P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. Decision Support Systems, Elsevier, 62:22-31, June 2014
 ```
 
 **Dataset**:
@@ -64,14 +64,19 @@ Document generation date: 2016-04-16 13:55:00.
 
 **Predictors**:
 
-|Class          | Frequency|
+|Type           | Frequency|
 |:--------------|---------:|
 |factor         |         6|
 |integer        |         3|
 |numeric        |         5|
 |ordered factor |         3|
 
-**Class imbalance**: 11% / 89% (4254 / 33973)
+**Class imbalance**:
+
+| class A |  class B |
+|:-------:|:--------:|
+|  11 %   |   89 %   |
+|  4254   |  33973   |
 
 ---
 
@@ -81,7 +86,7 @@ Document generation date: 2016-04-16 13:55:00.
 
 **Details**: [link](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29)
 
-**Files**:
+**Source data files**:
 
 * [wdbc.data](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data)
 * [wdbc.names](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.names)
@@ -132,11 +137,16 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 **Predictors**:
 
-|Class   | Frequency|
+|Type    | Frequency|
 |:-------|---------:|
 |numeric |        30|
 
-**Class imbalance**: 37% / 63% (212 / 357)
+**Class imbalance**:
+
+| class A |  class B |
+|:-------:|:--------:|
+|  37 %   |   63 %   |
+|   212   |   357    |
 
 ---
 
@@ -146,7 +156,7 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 **Details**: [link](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29)
 
-**Files**:
+**Source data files**:
 
 * [breast-cancer-wisconsin.data](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data)
 * [breast-cancer-wisconsin.names](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.names)
@@ -175,11 +185,16 @@ O. L. Mangasarian and W. H. Wolberg: "Cancer diagnosis via linear programming", 
 
 **Predictors**:
 
-|Class   | Frequency|
+|Type    | Frequency|
 |:-------|---------:|
 |integer |         9|
 
-**Class imbalance**: 35% / 65% (239 / 444)
+**Class imbalance**:
+
+| class A |  class B |
+|:-------:|:--------:|
+|  35 %   |   65 %   |
+|   239   |   444    |
 
 ---
 
@@ -189,7 +204,7 @@ O. L. Mangasarian and W. H. Wolberg: "Cancer diagnosis via linear programming", 
 
 **Details**: [link](https://archive.ics.uci.edu/ml/datasets/Cardiotocography)
 
-**Files**:
+**Source data files**:
 
 * [CTG.xls](https://archive.ics.uci.edu/ml/machine-learning-databases/00193/CTG.xls)
 
@@ -237,14 +252,19 @@ Ayres de Campos et al. (2000) SisPorto 2.0 A Program for Automated Analysis of C
 
 **Predictors**:
 
-|Class          | Frequency|
+|Type           | Frequency|
 |:--------------|---------:|
 |factor         |         9|
 |integer        |        17|
 |numeric        |         2|
 |ordered factor |         1|
 
-**Class imbalance**: 22% / 78% (471 / 1655)
+**Class imbalance**:
+
+| class A |  class B |
+|:-------:|:--------:|
+|  22 %   |   78 %   |
+|   471   |   1655   |
 
 ---
 
@@ -254,7 +274,7 @@ Ayres de Campos et al. (2000) SisPorto 2.0 A Program for Automated Analysis of C
 
 **Details**: [link](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients)
 
-**Files**:
+**Source data files**:
 
 * [default of credit card clients.xls](https://archive.ics.uci.edu/ml/machine-learning-databases/00350/default%20of%20credit%20card%20clients.xls)
 
@@ -296,12 +316,17 @@ Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for 
 
 **Predictors**:
 
-|Class   | Frequency|
+|Type    | Frequency|
 |:-------|---------:|
 |factor  |         3|
 |integer |        20|
 
-**Class imbalance**: 22% / 78% (6636 / 23364)
+**Class imbalance**:
+
+| class A |  class B |
+|:-------:|:--------:|
+|  22 %   |   78 %   |
+|  6636   |  23364   |
 
 ---
 
@@ -311,7 +336,7 @@ Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for 
 
 **Details**: [link](https://archive.ics.uci.edu/ml/datasets/ILPD+(Indian+Liver+Patient+Dataset))
 
-**Files**:
+**Source data files**:
 
 * [Indian Liver Patient Dataset (ILPD).csv](https://archive.ics.uci.edu/ml/machine-learning-databases/00225/Indian%20Liver%20Patient%20Dataset%20(ILPD).csv)
 
@@ -341,13 +366,18 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 **Predictors**:
 
-|Class   | Frequency|
+|Type    | Frequency|
 |:-------|---------:|
 |factor  |         1|
 |integer |         4|
 |numeric |         5|
 
-**Class imbalance**: 29% / 71% (167 / 416)
+**Class imbalance**:
+
+| class A |  class B |
+|:-------:|:--------:|
+|  29 %   |   71 %   |
+|   167   |   416    |
 
 ---
 
@@ -357,7 +387,7 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 **Details**: [link](https://archive.ics.uci.edu/ml/datasets/MAGIC+Gamma+Telescope)
 
-**Files**:
+**Source data files**:
 
 * [magic04.data](https://archive.ics.uci.edu/ml/machine-learning-databases/magic/magic04.data)
 * [magic04.names](https://archive.ics.uci.edu/ml/machine-learning-databases/magic/magic04.names)
@@ -388,11 +418,16 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 **Predictors**:
 
-|Class   | Frequency|
+|Type    | Frequency|
 |:-------|---------:|
 |numeric |        10|
 
-**Class imbalance**: 35% / 65% (6688 / 12332)
+**Class imbalance**:
+
+| class A |  class B |
+|:-------:|:--------:|
+|  35 %   |   65 %   |
+|  6688   |  12332   |
 
 ---
 
@@ -402,7 +437,7 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 **Details**: [link](https://archive.ics.uci.edu/ml/datasets/seismic-bumps)
 
-**Files**:
+**Source data files**:
 
 * [seismic-bumps.arff](https://archive.ics.uci.edu/ml/machine-learning-databases/00266/seismic-bumps.arff)
 
@@ -436,12 +471,17 @@ Sikora M., Wrobel L.: Application of rule induction algorithms for analysis of d
 
 **Predictors**:
 
-|Class   | Frequency|
+|Type    | Frequency|
 |:-------|---------:|
 |factor  |         4|
 |integer |        11|
 
-**Class imbalance**: 7% / 93% (170 / 2414)
+**Class imbalance**:
+
+| class A |  class B |
+|:-------:|:--------:|
+|   7 %   |   93 %   |
+|   170   |   2414   |
 
 ---
 
@@ -451,7 +491,7 @@ Sikora M., Wrobel L.: Application of rule induction algorithms for analysis of d
 
 **Details**: [link](https://archive.ics.uci.edu/ml/datasets/Spambase)
 
-**Files**:
+**Source data files**:
 
 * [spambase.DOCUMENTATION](https://archive.ics.uci.edu/ml/machine-learning-databases/spambase/spambase.DOCUMENTATION)
 * [spambase.data](https://archive.ics.uci.edu/ml/machine-learning-databases/spambase/spambase.data)
@@ -530,12 +570,17 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 **Predictors**:
 
-|Class   | Frequency|
+|Type    | Frequency|
 |:-------|---------:|
 |integer |         2|
 |numeric |        55|
 
-**Class imbalance**: 39% / 61% (1813 / 2788)
+**Class imbalance**:
+
+| class A |  class B |
+|:-------:|:--------:|
+|  39 %   |   61 %   |
+|  1813   |   2788   |
 
 ---
 
@@ -545,7 +590,7 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 **Details**: [link](https://archive.ics.uci.edu/ml/datasets/Wine+Quality)
 
-**Files**:
+**Source data files**:
 
 * [winequality-red.csv](https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv)
 * [winequality-white.csv](https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-white.csv)
@@ -578,12 +623,17 @@ P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. Modeling wine preferen
 
 **Predictors**:
 
-|Class   | Frequency|
+|Type    | Frequency|
 |:-------|---------:|
 |factor  |         1|
 |numeric |        11|
 
-**Class imbalance**: 37% / 63% (2384 / 4113)
+**Class imbalance**:
+
+| class A |  class B |
+|:-------:|:--------:|
+|  37 %   |   63 %   |
+|  2384   |   4113   |
 
 ---
 

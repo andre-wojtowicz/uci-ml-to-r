@@ -44,7 +44,7 @@ for (dir.name in dir(PATH_DATASETS))
     
     cat(paste0("**Details**: [link](", config.yaml$info, ")\n\n"))
     
-    cat(paste("**Files**:\n\n"))
+    cat(paste("**Source data files**:\n\n"))
     for (file.url in config.yaml$urls)
     {
         cat(paste0("* [", URLdecode(basename(file.url)), "](", file.url, ")\n"))
@@ -68,7 +68,7 @@ for (dir.name in dir(PATH_DATASETS))
     
     df.pred = data.frame(table(sapply(dataset[, 1:(ncol(dataset)-1)], 
                                function(f){paste(class(f), collapse=" ")})))
-    colnames(df.pred) = c("Class", "Frequency")
+    colnames(df.pred) = c("Type", "Frequency")
     
     cat(knitr::kable(df.pred, format="markdown"), sep="\n")
     cat("\n")
@@ -76,12 +76,17 @@ for (dir.name in dir(PATH_DATASETS))
     perc.classes = sort(round(100*as.numeric(
         table(dataset[, ncol(dataset)]))/nrow(dataset), 0))
     num.classes = sort(as.numeric(table(dataset[, ncol(dataset)])))
-    cat(paste("**Class imbalance**:", 
-              paste0(perc.classes[1], "% / ", 
-                     perc.classes[2], "% (",
-                     num.classes[1], " / ", 
-                     num.classes[2], ")\n\n")))
-    cat("---\n\n")
+    
+    cat("**Class imbalance**:\n\n")
+    
+    cat(knitr::kable(data.frame(A=c(paste(perc.classes[1], "%"), num.classes[1]), 
+                                B=c(paste(perc.classes[2], "%"), num.classes[2])), 
+                     format="markdown", col.names=c("class A", " class B"),
+                     align=c("c", "c")), 
+        sep="\n")
+    
+
+    cat("\n---\n\n")
 }
 ```
 
