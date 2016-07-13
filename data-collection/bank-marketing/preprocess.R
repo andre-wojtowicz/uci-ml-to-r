@@ -4,8 +4,8 @@ preprocessDataset = function()
     
     temp.dir = tempdir()
     
-    zip.file = "bank-additional.zip"
-    zip.dataset.path = "bank-additional/bank-additional-full.csv"
+    zip.file = "bank.zip"
+    zip.dataset.path = "bank-full.csv"
     
     flog.debug(paste("Unzipping", zip.file))
     
@@ -20,31 +20,25 @@ preprocessDataset = function()
     flog.debug("Preprocessing loaded dataset")
     
     dataset = dataset %>% 
-        select(-c(duration, pdays, default)) %>%
+        select(-c(duration, default)) %>%
         filter(job != "unknown" & marital != "unknown" & education != "unknown" & 
-               education != "illiterate" & housing != "unknown" & loan != "unknown") %>%
+               education != "unknown" & housing != "unknown" & loan != "unknown") %>%
         droplevels()
     
-    #dataset.yes = dataset %>% filter(y == "yes")
-    #dataset.no = dataset %>% filter(y == "no") %>% sample_n(nrow(dataset.yes))
-    #
-    #dataset = rbind(dataset.yes, dataset.no)
-    
-    dataset = dataset %>% mutate(
-                        education=factor(education, levels=c("basic.4y", "basic.6y", 
-                                                             "basic.9y", "high.school",
-                                                             "professional.course",
-                                                             "university.degree"),
-                                         ordered=TRUE),
-                        month=factor(month, levels=c("jan", "feb", "mar", 
-                                                     "apr", "may", "jun", 
-                                                     "jul", "aug", "sep", 
-                                                     "oct", "nov", "dec"), 
-                                     ordered=TRUE),
-                        day_of_week=factor(day_of_week, levels=c("mon", "tue", "wed",
-                                                                 "thu", "fri"),
-                                           ordered=TRUE)
-    )
+    dataset = dataset %>% 
+        mutate(
+            education=factor(education, levels=c("primary", "secondary", 
+                                                 "tertiary"),
+                             ordered=TRUE),
+            month=factor(month, levels=c("jan", "feb", "mar", 
+                                         "apr", "may", "jun", 
+                                         "jul", "aug", "sep", 
+                                         "oct", "nov", "dec"), 
+                         ordered=TRUE),
+            pdays.bin=revalue(factor(pdays==-1), 
+                              c("TRUE"="never", "FALSE"="successful")), 
+            pdays=as.integer(replace(pdays, pdays==-1, 999))) %>%
+        select(age:pdays, pdays.bin, previous:y)
     
     return(dataset)
 }

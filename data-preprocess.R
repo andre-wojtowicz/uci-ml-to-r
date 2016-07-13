@@ -3,6 +3,7 @@ rm(list=ls())
 source("config.R")
 source("utils.R")
 
+library(plyr)
 library(dplyr)
 library(foreign)
 library(XLConnect)
