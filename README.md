@@ -3,7 +3,22 @@ Andrzej Wójtowicz
 
 
 
-Document generation date: 2016-07-17 02:31:21.
+Document generation date: 2016-07-17 02:59:19.
+
+This project preprocesses a few datasets from [UC Irvine Machine Learning
+Repository](https://archive.ics.uci.edu/ml/) into tidy R object files.
+It focuses on the binary classification datasets and saves only complete cases
+within a dataset.
+
+**R software**: [Microsoft R Open](https://mran.microsoft.com/open/) (3.2.5)
+
+**Reproducibility library**: [checkpoint](https://github.com/RevolutionAnalytics/checkpoint)
+
+**Reproducibility procedure**:
+
+ 1. Run *s1-download-data.R* to download original datasets.
+ 2. Run *s2-preprocess-data.R* to preprocess the datasets.
+ 3. Optionally knit s*3-make-readme.Rmd* to get an overview of the preprocessed datasets.
 
 
 # Table of Contents
