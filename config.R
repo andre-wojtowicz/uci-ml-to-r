@@ -1,28 +1,48 @@
-# ---- checkpoint ----
+# ---- config ----
 
-CHECKPOINT.MRAN.URL      = "http://mran.microsoft.com/snapshot/"
-CHECKPOINT.SNAPSHOT.DATE = "2016-04-10"
+# randomization and output files
 
-library(checkpoint)
-options(checkpoint.mranUrl=CHECKPOINT.MRAN.URL)
-checkpoint(CHECKPOINT.SNAPSHOT.DATE)
+SEED                   = 1337
+OVERWRITE.OUTPUT.FILES = TRUE # overwrite downloaded and created datasets
 
-# ---- logger ----
+# extra user configuration and init
 
-LOGGER_LEVEL = futile.logger::INFO
+USER.CONFIG.FILE      = "config.R.user"
+USER.INIT.FILE        = "init.R.user"
 
-library(futile.logger)
-flog.threshold(LOGGER_LEVEL)
+# checkpoint library
 
-# ---- other ----
+CHECKPOINT.MRAN.URL      = "https://mran.microsoft.com/"
+CHECKPOINT.SNAPSHOT.DATE = "2016-07-01"
+CHECKPOINT.QUICK.LOAD    = TRUE # skip testing https and checking url
 
-PATH_DATASETS             = "data-collection/"
-PATH_DATASET_ORIGINAL     = paste0(PATH_DATASETS, "*/original/")
-PATH_DATASET_PREPROCESSED = paste0(PATH_DATASETS, "*/preprocessed/")
+# logging system
 
-FILE_CONFIG_YAML          = "config.yaml"
-FILE_PREPROCESSING_SCRIPT = "preprocess.R"
-FILE_PREPROCESSED_OUTPUT  = "dataset.rds"
+LOGGER.OUTPUT.S1.FILE           = "output-s1.log"
+LOGGER.OUTPUT.S2.FILE           = "output-s2.log"
+LOGGER.LEVEL                    = 6 # futile.logger::INFO
+LOGGER.OVERWRITE.EXISTING.FILES = TRUE
 
-if (file.exists("config.R.user"))
-    source("config.R.user")
+# datasets
+
+DATASETS.DIR                     = "data-collection"
+
+DATASET.NAME.PATTERN             = "DS-NAME"
+DATASET.ORIGINAL.DIR             = 
+    file.path(DATASETS.DIR, DATASET.NAME.PATTERN, "original")
+DATASET.PREPROCESSED.DIR         = 
+    file.path(DATASETS.DIR, DATASET.NAME.PATTERN, "preprocessed")
+DATASET.CONFIG.FILE              = "config.yaml"
+DATASET.PREPROCESSING.SCRIPT     = "preprocess.R"
+DATASET.PREPROCESSED.OUTPUT.FILE = "dataset.rds"
+
+# curl
+
+SSL.VERIFY.PEER = FALSE
+
+# load custom config
+
+if (file.exists(USER.CONFIG.FILE))
+{
+    source(USER.CONFIG.FILE)
+}

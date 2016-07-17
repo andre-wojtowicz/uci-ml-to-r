@@ -3,8 +3,7 @@ Andrzej Wójtowicz
 
 
 
-Document generation date: 2016-07-13 13:45:45.
-
+Document generation date: 2016-07-17 02:31:21.
 
 
 # Table of Contents
@@ -70,10 +69,10 @@ S. Moro, P. Cortez and P. Rita. A Data-Driven Approach to Predict the Success of
 
 **Class imbalance**:
 
-| class A |  class B |
-|:-------:|:--------:|
-|  12 %   |   88 %   |
-|  5021   |  38172   |
+| class A | class B |
+|:-------:|:-------:|
+|  12 %   |  88 %   |
+|  5021   |  38172  |
 
 ---
 
@@ -140,10 +139,10 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 **Class imbalance**:
 
-| class A |  class B |
-|:-------:|:--------:|
-|  37 %   |   63 %   |
-|   212   |   357    |
+| class A | class B |
+|:-------:|:-------:|
+|  37 %   |  63 %   |
+|   212   |   357   |
 
 ---
 
@@ -188,10 +187,10 @@ O. L. Mangasarian and W. H. Wolberg: "Cancer diagnosis via linear programming", 
 
 **Class imbalance**:
 
-| class A |  class B |
-|:-------:|:--------:|
-|  35 %   |   65 %   |
-|   239   |   444    |
+| class A | class B |
+|:-------:|:-------:|
+|  35 %   |  65 %   |
+|   239   |   444   |
 
 ---
 
@@ -258,10 +257,10 @@ Ayres de Campos et al. (2000) SisPorto 2.0 A Program for Automated Analysis of C
 
 **Class imbalance**:
 
-| class A |  class B |
-|:-------:|:--------:|
-|  22 %   |   78 %   |
-|   471   |   1655   |
+| class A | class B |
+|:-------:|:-------:|
+|  22 %   |  78 %   |
+|   471   |  1655   |
 
 ---
 
@@ -320,10 +319,10 @@ Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for 
 
 **Class imbalance**:
 
-| class A |  class B |
-|:-------:|:--------:|
-|  22 %   |   78 %   |
-|  6636   |  23364   |
+| class A | class B |
+|:-------:|:-------:|
+|  22 %   |  78 %   |
+|  6636   |  23364  |
 
 ---
 
@@ -371,10 +370,10 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 **Class imbalance**:
 
-| class A |  class B |
-|:-------:|:--------:|
-|  29 %   |   71 %   |
-|   167   |   416    |
+| class A | class B |
+|:-------:|:-------:|
+|  29 %   |  71 %   |
+|   167   |   416   |
 
 ---
 
@@ -421,10 +420,10 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 **Class imbalance**:
 
-| class A |  class B |
-|:-------:|:--------:|
-|  35 %   |   65 %   |
-|  6688   |  12332   |
+| class A | class B |
+|:-------:|:-------:|
+|  35 %   |  65 %   |
+|  6688   |  12332  |
 
 ---
 
@@ -475,10 +474,10 @@ Sikora M., Wrobel L.: Application of rule induction algorithms for analysis of d
 
 **Class imbalance**:
 
-| class A |  class B |
-|:-------:|:--------:|
-|   7 %   |   93 %   |
-|   170   |   2414   |
+| class A | class B |
+|:-------:|:-------:|
+|   7 %   |  93 %   |
+|   170   |  2414   |
 
 ---
 
@@ -574,10 +573,10 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 **Class imbalance**:
 
-| class A |  class B |
-|:-------:|:--------:|
-|  39 %   |   61 %   |
-|  1813   |   2788   |
+| class A | class B |
+|:-------:|:-------:|
+|  39 %   |  61 %   |
+|  1813   |  2788   |
 
 ---
 
@@ -627,10 +626,9 @@ P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. Modeling wine preferen
 
 **Class imbalance**:
 
-| class A |  class B |
-|:-------:|:--------:|
-|  37 %   |   63 %   |
-|  2384   |   4113   |
+| class A | class B |
+|:-------:|:-------:|
+|  37 %   |  63 %   |
+|  2384   |  4113   |
 
 ---
-

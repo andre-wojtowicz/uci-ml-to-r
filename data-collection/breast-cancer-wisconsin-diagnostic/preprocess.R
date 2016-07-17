@@ -1,8 +1,8 @@
-preprocessDataset = function()
+preprocess.dataset = function()
 {   
     csv.file = "wdbc.data"
     
-    dataset = read.csv(paste0(orig.dir, "/", csv.file), header=FALSE)
+    dataset = read.csv(file.path(orig.dir, csv.file), header = FALSE)
     
     colnames(dataset) = c("id", "diagnosis", 
                           apply(expand.grid(c("radius", "texture", "perimeter", 
@@ -12,7 +12,8 @@ preprocessDataset = function()
                                             c("mean", "se", "worst")), 
                                 1, function(x){paste(x[2], x[1])}))
     
-    dataset = dataset %>% select(`mean radius`:`worst fractal dimension`, diagnosis)
+    dataset = dataset %>% 
+        select(`mean radius`:`worst fractal dimension`, diagnosis)
 
     return(dataset)
 }

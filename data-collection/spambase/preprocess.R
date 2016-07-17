@@ -1,9 +1,9 @@
-preprocessDataset = function()
+preprocess.dataset = function()
 {   
     csv.file = "spambase.data"
     
-    dataset = read.csv(paste0(orig.dir, "/", csv.file),
-                      header=FALSE)
+    dataset = read.csv(file.path(orig.dir, csv.file),
+                       header = FALSE)
     
     colnames(dataset) = c("word_freq_make", "word_freq_address", "word_freq_all",
                           "word_freq_3d", "word_freq_our", "word_freq_over", 
@@ -27,7 +27,8 @@ preprocessDataset = function()
                           "capital_run_length_longest", "capital_run_length_total",
                           "class")
     
-    dataset = dataset %>% mutate(class=factor(class))
+    dataset = dataset %>% 
+        mutate(class = factor(class))
 
     return(dataset)
 }

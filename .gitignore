@@ -24,3 +24,6 @@ data-collection/*/preprocessed/*
 # markdown outputs
 *.html
 .Rproj.user
+
+# logger outputs
+*.log
