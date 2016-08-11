@@ -1,0 +1,18 @@
+--- 
+name: Mushroom
+
+info: https://archive.ics.uci.edu/ml/datasets/Mushroom
+
+urls:
+- https://archive.ics.uci.edu/ml/machine-learning-databases/mushroom/agaricus-lepiota.data
+- https://archive.ics.uci.edu/ml/machine-learning-databases/mushroom/agaricus-lepiota.names
+
+cite: > 
+    https://archive.ics.uci.edu/ml/citation_policy.html
+
+    @misc{Lichman:2013 ,
+    author = "M. Lichman",
+    year = "2013",
+    title = "{UCI} Machine Learning Repository",
+    url = "http://archive.ics.uci.edu/ml",
+    institution = "University of California, Irvine, School of Information and Computer Sciences" } 

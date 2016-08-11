@@ -3,7 +3,7 @@
 source("init.R")
 source("utils.R")
 
-setup.logger(LOGGER.OUTPUT.S2.FILE)
+setup.logger(LOGGER.OUTPUT.S2.FILE, LOGGER.OVERWRITE.EXISTING.FILES)
 
 flog.info("Step 2: preprocess dataset collection")
 

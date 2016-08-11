@@ -15,9 +15,9 @@ print.dataset.statistics = function(dataset)
                      ", classes: ", perc.classes[1], "%/", perc.classes[2], "%"))
 }
 
-setup.logger = function(output.file)
+setup.logger = function(output.file, overwrite.existing.files)
 {
-    if (LOGGER.OVERWRITE.EXISTING.FILES & file.exists(output.file))
+    if (overwrite.existing.files & file.exists(output.file))
     {
         file.remove(output.file)
     }

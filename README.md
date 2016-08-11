@@ -3,7 +3,7 @@ Andrzej Wójtowicz
 
 
 
-Document generation date: 2016-07-17 02:59:19.
+Document generation date: 2016-08-11 18:12:19.
 
 This project preprocesses a few datasets from [UC Irvine Machine Learning
 Repository](https://archive.ics.uci.edu/ml/) into tidy R object files.
@@ -27,9 +27,11 @@ within a dataset.
 1. [Breast Cancer Wisconsin (Diagnostic)](#breast-cancer-wisconsin-diagnostic)
 1. [Breast Cancer Wisconsin (Original)](#breast-cancer-wisconsin-original)
 1. [Cardiotocography](#cardiotocography)
+1. [Census income](#census-income)
 1. [Default of credit card clients](#default-of-credit-card-clients)
 1. [ILPD (Indian Liver Patient Dataset)](#ilpd-indian-liver-patient-dataset)
 1. [MAGIC Gamma Telescope](#magic-gamma-telescope)
+1. [Mushroom](#mushroom)
 1. [Seismic bumps](#seismic-bumps)
 1. [Spambase](#spambase)
 1. [Wine Quality](#wine-quality)
@@ -279,6 +281,62 @@ Ayres de Campos et al. (2000) SisPorto 2.0 A Program for Automated Analysis of C
 
 ---
 
+# Census income 
+
+**Local directory**: census-income 
+
+**Details**: [link](https://archive.ics.uci.edu/ml/datasets/Census+Income)
+
+**Source data files**:
+
+* [adult.data](https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data)
+* [adult.test](https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.test)
+* [adult.names](https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.names)
+
+**Cite**:
+```nohighlight
+https://archive.ics.uci.edu/ml/citation_policy.html
+@misc{Lichman:2013 , author = "M. Lichman", year = "2013", title = "{UCI} Machine Learning Repository", url = "http://archive.ics.uci.edu/ml", institution = "University of California, Irvine, School of Information and Computer Sciences" } 
+```
+
+**Dataset**:
+
+```nohighlight
+'data.frame':	45222 obs. of  14 variables:
+ $ age           : int  39 50 38 53 28 37 49 52 31 42 ...
+ $ workclass     : Factor w/ 8 levels "federal.gov",..: 7 6 4 4 4 4 4 6 4 4 ...
+ $ fnlwgt        : int  77516 83311 215646 234721 338409 284582 160187 209642 45781 159449 ...
+ $ education     : Ord.factor w/ 16 levels "preschool"<"x1st.4th"<..: 13 13 9 7 13 14 5 9 14 13 ...
+ $ marital.status: Factor w/ 7 levels "divorced","married.af.spouse",..: 5 3 1 3 3 3 4 3 5 3 ...
+ $ occupation    : Factor w/ 14 levels "adm.clerical",..: 1 4 6 6 10 4 8 4 10 4 ...
+ $ relationship  : Factor w/ 6 levels "husband","not.in.family",..: 2 1 2 1 6 6 2 1 2 1 ...
+ $ race          : Factor w/ 5 levels "amer.indian.eskimo",..: 5 5 5 3 3 5 3 5 5 5 ...
+ $ sex           : Factor w/ 2 levels "female","male": 2 2 2 2 1 1 1 2 1 2 ...
+ $ capital.gain  : int  2174 0 0 0 0 0 0 0 14084 5178 ...
+ $ capital.loss  : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ hours.per.week: int  40 13 40 40 40 40 16 45 50 40 ...
+ $ native.country: Factor w/ 41 levels "cambodia","canada",..: 39 39 39 39 5 39 23 39 39 39 ...
+ $ class         : Factor w/ 2 levels "x..50k","x.50k": 1 1 1 1 1 1 1 2 2 2 ...
+
+```
+
+**Predictors**:
+
+|Type           | Frequency|
+|:--------------|---------:|
+|factor         |         7|
+|integer        |         5|
+|ordered factor |         1|
+
+**Class imbalance**:
+
+| class A | class B |
+|:-------:|:-------:|
+|  25 %   |  75 %   |
+|  11208  |  34014  |
+
+---
+
 # Default of credit card clients 
 
 **Local directory**: credit-card 
@@ -439,6 +497,68 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 |:-------:|:-------:|
 |  35 %   |  65 %   |
 |  6688   |  12332  |
+
+---
+
+# Mushroom 
+
+**Local directory**: mushroom 
+
+**Details**: [link](https://archive.ics.uci.edu/ml/datasets/Mushroom)
+
+**Source data files**:
+
+* [agaricus-lepiota.data](https://archive.ics.uci.edu/ml/machine-learning-databases/mushroom/agaricus-lepiota.data)
+* [agaricus-lepiota.names](https://archive.ics.uci.edu/ml/machine-learning-databases/mushroom/agaricus-lepiota.names)
+
+**Cite**:
+```nohighlight
+https://archive.ics.uci.edu/ml/citation_policy.html
+@misc{Lichman:2013 , author = "M. Lichman", year = "2013", title = "{UCI} Machine Learning Repository", url = "http://archive.ics.uci.edu/ml", institution = "University of California, Irvine, School of Information and Computer Sciences" } 
+```
+
+**Dataset**:
+
+```nohighlight
+'data.frame':	5644 obs. of  22 variables:
+ $ cap.shape               : Factor w/ 6 levels "b","c","f","k",..: 6 6 1 6 6 6 1 1 6 1 ...
+ $ cap.surface             : Factor w/ 4 levels "f","g","s","y": 3 3 3 4 3 4 3 4 4 3 ...
+ $ cap.color               : Factor w/ 10 levels "b","c","e","g",..: 5 10 9 9 4 10 9 9 9 10 ...
+ $ bruises                 : Factor w/ 2 levels "f","t": 2 2 2 2 1 2 2 2 2 2 ...
+ $ odor                    : Factor w/ 9 levels "a","c","f","l",..: 7 1 4 7 6 1 1 4 7 1 ...
+ $ gill.attachment         : Factor w/ 2 levels "a","f": 2 2 2 2 2 2 2 2 2 2 ...
+ $ gill.spacing            : Factor w/ 2 levels "c","w": 1 1 1 1 2 1 1 1 1 1 ...
+ $ gill.size               : Factor w/ 2 levels "b","n": 2 1 1 2 1 1 1 1 2 1 ...
+ $ gill.color              : Factor w/ 12 levels "b","e","g","h",..: 5 5 6 6 5 6 3 6 8 3 ...
+ $ stalk.shape             : Factor w/ 2 levels "e","t": 1 1 1 1 2 1 1 1 1 1 ...
+ $ stalk.root              : Factor w/ 4 levels "b","c","e","r": 3 2 2 3 3 2 2 2 3 2 ...
+ $ stalk.surface.above.ring: Factor w/ 4 levels "f","k","s","y": 3 3 3 3 3 3 3 3 3 3 ...
+ $ stalk.surface.below.ring: Factor w/ 4 levels "f","k","s","y": 3 3 3 3 3 3 3 3 3 3 ...
+ $ stalk.color.above.ring  : Factor w/ 9 levels "b","c","e","g",..: 8 8 8 8 8 8 8 8 8 8 ...
+ $ stalk.color.below.ring  : Factor w/ 9 levels "b","c","e","g",..: 8 8 8 8 8 8 8 8 8 8 ...
+ $ veil.color              : Factor w/ 4 levels "n","o","w","y": 3 3 3 3 3 3 3 3 3 3 ...
+ $ ring.number             : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ ring.type               : Factor w/ 5 levels "e","f","l","n",..: 5 5 5 5 1 5 5 5 5 5 ...
+ $ spore.print.color       : Factor w/ 9 levels "b","h","k","n",..: 3 4 4 3 4 3 3 4 3 3 ...
+ $ population              : Factor w/ 6 levels "a","c","n","s",..: 4 3 3 4 1 3 3 4 5 4 ...
+ $ habitat                 : Factor w/ 7 levels "d","g","l","m",..: 6 2 4 6 2 2 4 4 2 4 ...
+ $ class                   : Factor w/ 2 levels "e","p": 2 1 1 2 1 1 1 1 2 1 ...
+
+```
+
+**Predictors**:
+
+|Type    | Frequency|
+|:-------|---------:|
+|factor  |        20|
+|integer |         1|
+
+**Class imbalance**:
+
+| class A | class B |
+|:-------:|:-------:|
+|  38 %   |  62 %   |
+|  2156   |  3488   |
 
 ---
 
