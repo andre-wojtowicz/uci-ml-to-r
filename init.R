@@ -47,6 +47,7 @@ library(RCurl)
 library(tools)
 library(yaml)
 
+library(reshape)
 library(plyr)
 library(dplyr)
 library(foreign)

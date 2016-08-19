@@ -42,8 +42,20 @@ preprocess.dataset = function()
     dataset = dataset %>% 
         mutate(education = factor(education, levels = education.ordered.levels, 
                                   ordered = TRUE)) %>%
-        select(-education.num) %>% 
-        filter(complete.cases(.))
+        select(-education.num, -native.country) %>%  # native.country is too much
+                                                     # biased into US
+        filter(complete.cases(.) & occupation != "Armed-Forces") %>% # only few
+                                                                     # cases of
+                                                                     # Armed-Forces
+        droplevels
+    
+    dataset$education = factor(combine_factor(dataset$education, # combine into
+                                              c(1, 1, 1, 1, 1,   # more numerous
+                                                1, 1, 1, 2, 3,   # groups
+                                                3, 3, 4, 5, 5, 5)),
+                               ordered = TRUE)
+    levels(dataset$education) = c("school", "highschool", "college", 
+                                  "university", "science")
     
     return(dataset)
 }

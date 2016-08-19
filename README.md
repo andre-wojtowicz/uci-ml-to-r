@@ -3,14 +3,14 @@ Andrzej Wójtowicz
 
 
 
-Document generation date: 2016-08-11 18:12:19.
+Document generation date: 2016-08-19 21:47:14.
 
 This project preprocesses a few datasets from [UC Irvine Machine Learning
 Repository](https://archive.ics.uci.edu/ml/) into tidy R object files.
 It focuses on the binary classification datasets and saves only complete cases
 within a dataset.
 
-**R software**: [Microsoft R Open](https://mran.microsoft.com/open/) (3.2.5)
+**R software**: [Microsoft R Open](https://mran.microsoft.com/open/) (3.3.0)
 
 **Reproducibility library**: [checkpoint](https://github.com/RevolutionAnalytics/checkpoint)
 
@@ -18,7 +18,11 @@ within a dataset.
 
  1. Run *s1-download-data.R* to download original datasets.
  2. Run *s2-preprocess-data.R* to preprocess the datasets.
- 3. Optionally knit s*3-make-readme.Rmd* to get an overview of the preprocessed datasets.
+ 
+ Optionally:
+ 
+ 3. knit *s3-make-readme.Rmd* to get an overview of the preprocessed datasets,
+ 4. run *s4-make-release.sh* to create zip file with preprocessed datasets.
 
 
 # Table of Contents
@@ -302,20 +306,19 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 **Dataset**:
 
 ```nohighlight
-'data.frame':	45222 obs. of  14 variables:
+'data.frame':	46018 obs. of  13 variables:
  $ age           : int  39 50 38 53 28 37 49 52 31 42 ...
- $ workclass     : Factor w/ 8 levels "federal.gov",..: 7 6 4 4 4 4 4 6 4 4 ...
+ $ workclass     : Factor w/ 7 levels "federal.gov",..: 6 5 3 3 3 3 3 5 3 3 ...
  $ fnlwgt        : int  77516 83311 215646 234721 338409 284582 160187 209642 45781 159449 ...
- $ education     : Ord.factor w/ 16 levels "preschool"<"x1st.4th"<..: 13 13 9 7 13 14 5 9 14 13 ...
+ $ education     : Ord.factor w/ 5 levels "school"<"highschool"<..: 4 4 2 1 4 5 1 2 5 4 ...
  $ marital.status: Factor w/ 7 levels "divorced","married.af.spouse",..: 5 3 1 3 3 3 4 3 5 3 ...
- $ occupation    : Factor w/ 14 levels "adm.clerical",..: 1 4 6 6 10 4 8 4 10 4 ...
+ $ occupation    : Factor w/ 13 levels "adm.clerical",..: 1 3 5 5 9 3 7 3 9 3 ...
  $ relationship  : Factor w/ 6 levels "husband","not.in.family",..: 2 1 2 1 6 6 2 1 2 1 ...
  $ race          : Factor w/ 5 levels "amer.indian.eskimo",..: 5 5 5 3 3 5 3 5 5 5 ...
  $ sex           : Factor w/ 2 levels "female","male": 2 2 2 2 1 1 1 2 1 2 ...
  $ capital.gain  : int  2174 0 0 0 0 0 0 0 14084 5178 ...
  $ capital.loss  : int  0 0 0 0 0 0 0 0 0 0 ...
  $ hours.per.week: int  40 13 40 40 40 40 16 45 50 40 ...
- $ native.country: Factor w/ 41 levels "cambodia","canada",..: 39 39 39 39 5 39 23 39 39 39 ...
  $ class         : Factor w/ 2 levels "x..50k","x.50k": 1 1 1 1 1 1 1 2 2 2 ...
 
 ```
@@ -324,7 +327,7 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 
 |Type           | Frequency|
 |:--------------|---------:|
-|factor         |         7|
+|factor         |         6|
 |integer        |         5|
 |ordered factor |         1|
 
@@ -333,7 +336,7 @@ https://archive.ics.uci.edu/ml/citation_policy.html
 | class A | class B |
 |:-------:|:-------:|
 |  25 %   |  75 %   |
-|  11208  |  34014  |
+|  11417  |  34601  |
 
 ---
 

@@ -26,7 +26,11 @@ within a dataset.
 
  1. Run *s1-download-data.R* to download original datasets.
  2. Run *s2-preprocess-data.R* to preprocess the datasets.
- 3. Optionally knit s*3-make-readme.Rmd* to get an overview of the preprocessed datasets.
+ 
+ Optionally:
+ 
+ 3. knit *s3-make-readme.Rmd* to get an overview of the preprocessed datasets,
+ 4. run *s4-make-release.sh* to create zip file with preprocessed datasets.
 
 ```{r show-datasets, results='asis'}
 
